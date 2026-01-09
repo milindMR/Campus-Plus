@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | G H Raisoni College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="logo-area">
+            <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="logo-text">
+                <h1>G H Raisoni College</h1>
+                <span>Engineering, Nagpur</span>
+            </div>
+        </div>
+        
+        <div class="user-area">
+            <a href="#" class="icon-btn"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="icon-btn"><i class="fa-solid fa-bell"></i><span class="badge">2</span></a>
+            <div class="profile-box">
+                <div class="profile-text">
+                    <small>Welcome</small>
+                    <strong>MILIND</strong>
+                </div>
+                <img src="https://ui-avatars.com/api/?name=Milind&background=6f42c1&color=fff" alt="Profile" class="avatar">
+            </div>
+            <button id="mobile-menu-btn" class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <aside class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li class="active">
+                        <a href="#"><i class="fa-solid fa-gauge-high"></i> <span>Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-user-plus"></i> <span>Admission</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-book-open"></i> <span>Course</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-calendar-check"></i> <span>Attendance</span></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#"><i class="fa-solid fa-user"></i> <span>Student Information</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-pen-to-square"></i> <span>Exam</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-indian-rupee-sign"></i> <span>Finance</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-list-check"></i> <span>My Courses</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-compass"></i> <span>Navigation</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-calendar-days"></i> <span>Events</span></a>
+                    </li>
+                    <li>
+                        <a href="#" id="student-link"><i class="fa-solid fa-user-graduate"></i> <span>Student</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h2 class="page-title">Dashboard</h2>
+
+            <div class="dashboard-grid">
+                
+                <div class="card info-card">
+                    <div class="card-header">
+                        <h3>Welcome</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="student-name">MILIND</h2>
+                        <div class="info-row">
+                            <span>Reg No:</span>
+                            <strong>2023ENG001</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Roll No:</span>
+                            <strong>CS-A-45</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Semester:</span>
+                            <strong>VI</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card attendance-card">
+                    <div class="card-header">
+                        <h3>Attendance</h3>
+                    </div>
+                    <div class="card-body center-content">
+                        <div class="donut-chart" style="--p:85; --c:#3498db; --b:#2ecc71;">
+                            <div class="percentage">85%</div>
+                        </div>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="dot blue"></span> Present</span>
+                            <span class="legend-item"><span class="dot green"></span> Absent</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card performance-card">
+                    <div class="card-header">
+                        <h3>Performance</h3>
+                    </div>
+                    <div class="card-body center-content">
+                        <div class="cgpa-display">
+                            <span class="cgpa-value">9.32</span>
+                            <span class="cgpa-label">CGPA</span>
+                        </div>
+                        <p class="grade-status">Excellent</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid lower-section">
+                
+                <div class="card classes-card">
+                    <div class="card-header">
+                        <h3>Upcoming Classes</h3>
+                    </div>
+                    <div class="card-body scrollable">
+                        <div class="class-item">
+                            <div class="class-time">
+                                <span>10:30 AM</span>
+                                <small>Block A-204</small>
+                            </div>
+                            <div class="class-details">
+                                <strong>CS304 - Data Structures</strong>
+                                <span class="badge-theory">Theory</span>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">
+                                <span>11:30 AM</span>
+                                <small>Lab 3</small>
+                            </div>
+                            <div class="class-details">
+                                <strong>CS305 - Python Lab</strong>
+                                <span class="badge-lab">Practical</span>
+                            </div>
+                        </div>
+                         <div class="class-item">
+                            <div class="class-time">
+                                <span>02:00 PM</span>
+                                <small>Block B-101</small>
+                            </div>
+                            <div class="class-details">
+                                <strong>HU201 - Soft Skills</strong>
+                                <span class="badge-theory">Theory</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card results-card">
+                    <div class="card-header">
+                        <h3>Recent Published Results</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="result-table">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Course</th>
+                                    <th>Component</th>
+                                    <th>Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Operating Sys.</td>
+                                    <td>Mid-Sem</td>
+                                    <td class="grade-a">A</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>DBMS</td>
+                                    <td>Quiz 1</td>
+                                    <td class="grade-ap">A+</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Mathematics</td>
+                                    <td>Final</td>
+                                    <td class="grade-b">B+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card exam-card">
+                    <div class="card-header">
+                        <h3>Upcoming Examinations</h3>
+                    </div>
+                    <div class="card-body center-content empty-state">
+                        <i class="fa-solid fa-magnifying-glass big-icon"></i>
+                        <p>No Upcoming Exam</p>
+                        <small>Relax and prepare for the next cycle.</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Section -->
+            <div id="navigation-page" class="navigation-section" style="display: none;">
+                <div class="nav-header">
+                    <h1 class="nav-title">Campus Navigation</h1>
+                    <p class="nav-subtitle">Find departments, faculty members, and important locations easily</p>
+                </div>
+
+                <!-- Search Section -->
+                <div class="search-container">
+                    <div class="search-bar-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="nav-search" class="search-input" placeholder="Search for a department or faculty member…">
+                    </div>
+                </div>
+
+                <!-- Quick Suggestions -->
+                <div class="suggestions-container">
+                    <h3 class="suggestions-title">Quick Suggestions</h3>
+                    <div class="suggestions-list">
+                        <button class="suggestion-chip" data-search="Computer Science & Engineering">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>Computer Science & Engineering</span>
+                        </button>
+                        <button class="suggestion-chip" data-search="Artificial Intelligence & Data Science">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>Artificial Intelligence & Data Science</span>
+                        </button>
+                        <button class="suggestion-chip" data-search="Electronics & Telecommunication">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>Electronics & Telecommunication</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-container">
+                    <div id="campus-map" style="width: 100%; height: 400px; border-radius: 12px;"></div>
+                </div>
+
+                <!-- Faculty & Departments Grid -->
+                <div class="faculty-departments-grid">
+                    <div class="faculty-card">
+                        <h3 class="section-title">Faculty Members</h3>
+                        <div class="faculty-list">
+                            <div class="faculty-item" data-name="Dr. Amit Deshmukh">
+                                <div class="faculty-avatar">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div class="faculty-info">
+                                    <h4>Dr. Amit Deshmukh</h4>
+                                    <p>Computer Science</p>
+                                </div>
+                            </div>
+                            <div class="faculty-item" data-name="Prof. Neha Kulkarni">
+                                <div class="faculty-avatar">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div class="faculty-info">
+                                    <h4>Prof. Neha Kulkarni</h4>
+                                    <p>Electronics Engineering</p>
+                                </div>
+                            </div>
+                            <div class="faculty-item" data-name="Dr. Rahul Patil">
+                                <div class="faculty-avatar">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div class="faculty-info">
+                                    <h4>Dr. Rahul Patil</h4>
+                                    <p>Artificial Intelligence & Data Science</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="departments-card">
+                        <h3 class="section-title">Departments</h3>
+                        <div class="departments-list">
+                            <div class="department-item" data-dept="Department of Computer Science & Engineering">
+                                <i class="fa-solid fa-folder"></i>
+                                <span>Computer Science & Engineering</span>
+                            </div>
+                            <div class="department-item" data-dept="Department of Artificial Intelligence & Data Science">
+                                <i class="fa-solid fa-folder"></i>
+                                <span>AI & Data Science</span>
+                            </div>
+                            <div class="department-item" data-dept="Department of Electronics & Telecommunication Engineering">
+                                <i class="fa-solid fa-folder"></i>
+                                <span>Electronics & Telecommunication</span>
+                            </div>
+                            <div class="department-item" data-dept="Department of Information Technology">
+                                <i class="fa-solid fa-folder"></i>
+                                <span>Information Technology</span>
+                            </div>
+                            <div class="department-item" data-dept="Department of Mechanical Engineering">
+                                <i class="fa-solid fa-folder"></i>
+                                <span>Mechanical Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Section -->
+            <div id="events-page" class="events-section" style="display: none;">
+                <div class="events-poster">
+                    <div class="poster-background">
+                        <div class="gradient-blob blob-1"></div>
+                        <div class="gradient-blob blob-2"></div>
+                        <div class="gradient-blob blob-3"></div>
+                        <div class="geometric-pattern"></div>
+                    </div>
+                    <div class="poster-content">
+                        <div class="event-icon-container">
+                            <i class="fa-solid fa-calendar"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h1 class="poster-headline">Upcoming Campus Events</h1>
+                        <p class="poster-subtext">Early Awareness for Students</p>
+                        <div class="event-details">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="date-day">15</span>
+                                    <span class="date-month">JAN</span>
+                                </div>
+                                <div class="event-info">
+                                    <h3>Tech Hackathon 2026</h3>
+                                    <p>Innovation & Coding Challenge</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="date-day">22</span>
+                                    <span class="date-month">JAN</span>
+                                </div>
+                                <div class="event-info">
+                                    <h3>Annual Tech Fest</h3>
+                                    <p>Showcase your technical talents</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="date-day">28</span>
+                                    <span class="date-month">JAN</span>
+                                </div>
+                                <div class="event-info">
+                                    <h3>Career Fair 2026</h3>
+                                    <p>Connect with top recruiters</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Complaints Section -->
+            <div id="student-complaints" class="student-complaints-section" style="display: none;">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Class Representative Complaints & Suggestions</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="complaints-form">
+                            <div class="form-group">
+                                <label for="complaint-text">Post your complaint or suggestion:</label>
+                                <textarea id="complaint-text" name="complaint" rows="6" placeholder="Enter your complaint or suggestion here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2026 G H Raisoni College. All rights reserved.</p>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyLINz4WW1zgQAYHrHiKrvLY2aU1M9XWY"></script>
+    <script src="script.js"></script>
+</body>
+</html>
