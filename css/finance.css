@@ -1,0 +1,112 @@
+/* --- Finance Section --- */
+.finance-section {
+    width: 100%;
+}
+
+/* --- Student Details Card --- */
+.student-details-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.student-details-header {
+    padding: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.student-details-header h3 {
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.student-details-body {
+    padding: 30px;
+}
+
+/* --- Three Column Layout --- */
+.details-three-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.details-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Student Photo --- */
+.student-profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.student-profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-purple);
+    object-fit: cover;
+    background: #f0f0f0;
+}
+
+/* --- Detail Row --- */
+.detail-row {
+    margin-bottom: 18px;
+}
+
+.detail-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.detail-value {
+    font-size: 15px;
+    color: var(--text-dark);
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.detail-value.placeholder {
+    color: #aaa;
+}
+
+/* --- Responsive Three Column --- */
+@media (max-width: 1024px) {
+    .details-three-column {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .details-three-column {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .student-details-body {
+        padding: 20px;
+    }
+
+    .detail-row {
+        margin-bottom: 15px;
+    }
+
+    .student-profile-section {
+        margin-bottom: 15px;
+    }
+}

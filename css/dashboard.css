@@ -1,0 +1,142 @@
+/* --- Dashboard Grid --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* --- Student Info --- */
+.student-name {
+    color: var(--primary-purple);
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* --- Attendance Donut --- */
+.donut-chart {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--c) calc(var(--p)*1%), 
+        var(--b) 0
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.donut-chart::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.percentage {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.chart-legend {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.blue {
+    background: var(--blue);
+}
+
+.green {
+    background: #2ecc71;
+}
+
+/* --- Performance --- */
+.cgpa-display {
+    text-align: center;
+}
+
+.cgpa-value {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--success-green);
+    display: block;
+}
+
+.cgpa-label {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.grade-status {
+    margin-top: 10px;
+    background: #e6ffed;
+    color: var(--success-green);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* --- Upcoming Classes --- */
+.scrollable {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.class-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.class-time {
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+    border-right: 2px solid var(--primary-orange);
+    padding-right: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.class-time span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.class-time small {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.class-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.class-details strong {
+    font-size: 14px;
+}

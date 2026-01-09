@@ -1,0 +1,9 @@
+/* --- Student Complaints Section --- */
+.student-complaints-section {
+    margin-top: 30px;
+}
+
+.student-complaints-section .card {
+    max-width: 600px;
+    margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+/* --- Course Section --- */
+.course-section {
+    margin-top: 8px;
+}
+
+.course-section .card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}

@@ -1,0 +1,198 @@
+/* --- Cards --- */
+.card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-header h3 {
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding: 20px;
+    flex: 1;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Tabs --- */
+.tabs {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs .tab {
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-muted);
+    background: transparent;
+    border: 1px solid transparent;
+    font-weight: 600;
+}
+
+.tabs .tab.active {
+    background: var(--primary-orange);
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.03);
+}
+
+/* --- Forms --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: 14px;
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 0 2px rgba(111, 66, 193, 0.1);
+}
+
+.btn-submit {
+    background: var(--primary-purple);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #5a32a3;
+    transform: translateY(-1px);
+}
+
+/* --- Tables --- */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.result-table th {
+    background: #343a40;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+.result-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.grade-a {
+    color: var(--success-green);
+    font-weight: bold;
+}
+
+.grade-ap {
+    color: var(--primary-purple);
+    font-weight: bold;
+}
+
+/* --- Empty State --- */
+.empty-state {
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.big-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    opacity: 0.3;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.course-table thead th {
+    background: #343a40;
+    color: #fff;
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.course-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.course-empty {
+    color: var(--text-muted);
+}
+
+/* --- Info Rows --- */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px;
+}
+
+/* --- Badges --- */
+.badge-theory {
+    background: #e3f2fd;
+    color: #1976d2;
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.badge-lab {
+    background: #fff3cd;
+    color: #856404;
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-top: 2px;
+}
